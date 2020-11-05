@@ -1,0 +1,107 @@
+YII Overview
+	- This it open source php framework.
+	- It is totally based on MVC structure.
+	- It has a component-based architecture.
+	- Caching supported.
+	- It also have a code generation tool called GII.
+	- The tool provides full CRUD operation itnerface maker.
+	- It is providing built in web applications like..
+		1. Forms
+		2. Portals
+		3. CMS(Content Management System)
+		4. RESTful services(REST api's)
+		5. E-Commerce website
+	- It is fully OOP's based. [ Object Oriented Programming ]
+	- If you want to start working with need to clear basic concepts of oop's.
+	- It is support latest features of the new versions of PHP like..
+		1. 	Traits
+			- In generally php supports only single inheritance. Have one parent class and one child class. Extends parent class and use all the properties of the parent class to child class easily.
+			- But we need to apply multilevel inheritance concept into the php. So for this purpose PHP introduce their new feature called TRAITS.
+			- Traits use to create a methods and that can be used into multple classes.
+			- Traits have methods and abstract methods also. It's user define methods.
+			- Also access modifiers for a method [public, private, protected].
+			- It is introduced into the php version 5.4
+		2. 	Namespaces
+
+	Core features of YII
+		- Implements in MVC architectural pattern.
+		- Provide features to connect relational or NoSQL databases.
+		- Multi-tier caching supports.
+		- RESTful API develoment support.
+		- High performance.
+
+	Installation of YII 
+		- All those intallation do with the composer.
+		- If dont have composer, first need to download it and install into the system.
+		- Then after check composer has been installed or not.
+		CMD commands (windows)	
+			- Now install YII framework and create new project of yii using following commands.
+				1. composer create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
+			- After installation we need to start localhost following below command.
+				2. php -S localhost:8090 -t web
+			- If you want to stop server just follow below command.
+				3. Press Ctrl + c key from the keyboard.
+
+		Terminal commands (ubuntu)
+			- Install php into system if it is not available
+				1. sudo apt-get install php5
+			- Install mysql-server into system if it is not available
+				2. sudo apt-get install mysql-server
+			- Now install YII framework and create new project of yii using following commands.
+				3. composer create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
+				OR
+				3. composer create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced advanced
+			- After installation we need to start localhost following below command.
+				4.	php -S localhost:9090 -t web
+			- If you want to stop server just follow below command.
+				5. Press Ctrl + c key from the keyboard.
+			- Connect to database, following below steps
+				- Go to terminal and hit below command
+					-> mysql -u root -p
+
+File structure
+	1.	assets
+		-	In the assets folder, having one AppAsset.php file.
+		-	In this file, we need to define all the linking file name with their file path.
+		-	For example. we have css and js file for the web page.
+		-	So in generally we can append all those file into the html with link tag.
+		-	But in Yii framework, we don't do like above.
+		-	Just define css and js file name with their file path into the AppAsset.php file
+		-	And run the project.
+	2. 	commands
+	3. 	config
+		-	In the config folder, we have some extra files to define our configurations/rules related to project.
+		List of file
+			-	console.php
+			-	db.php
+				->	If database is required so we need to connect database with out project.
+				->	In db.php file, we need to configure our database connection attributes.
+				->	Attributes like, host name, db name, username and password etc..
+			-	params.php
+				->	This file has been generally use for the define constant variable and their values.
+				->	Like email, phone_number etc...
+			-	test.php
+			-	test_db.php
+			-	web.php
+				->	In this we need to define some configuration related to project.
+				->	Load some required file, components.
+				->	Components like models, caches, logs, db, url_routing
+	4.	controllers
+		-	Controller name and our business logics.
+	5.	mail
+		-	If user need to use email, need to define all the detail related to email connection here.
+	6.	models
+		-	Define model details
+	7.	runtime
+	8.	tests
+	9.	vagrant
+	10.	vendor
+	11.	views
+		-	Define html view pages
+	12.	web
+		-	Execution of project has been start fron this folder.
+		-	Define 2 files 1. index.php and 2. index-test.php
+	13.	widgets
+
+Theam installation
+	-	
